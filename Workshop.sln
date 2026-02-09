@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka.Producer", "Kafka.Producer\Kafka.Producer.csproj", "{6E2990C6-F2A2-47AD-867A-2F56B6A2C4FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApplication", "TestWebApplication\TestWebApplication.csproj", "{BB0443E6-E7A5-468D-9084-46D708EB3D95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTest", "TaskTest\TaskTest.csproj", "{186651D6-D79D-4DFB-AB1A-E2265470B4F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaConsumer", "KafkaConsumer\KafkaConsumer.csproj", "{AE01CD60-D03E-437D-B606-798462FB16F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka.Share", "Kafka.Share\Kafka.Share.csproj", "{A01AB675-2FE9-4BDF-B051-27B5084E4DA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2990C6-F2A2-47AD-867A-2F56B6A2C4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2990C6-F2A2-47AD-867A-2F56B6A2C4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2990C6-F2A2-47AD-867A-2F56B6A2C4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2990C6-F2A2-47AD-867A-2F56B6A2C4FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0443E6-E7A5-468D-9084-46D708EB3D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0443E6-E7A5-468D-9084-46D708EB3D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0443E6-E7A5-468D-9084-46D708EB3D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0443E6-E7A5-468D-9084-46D708EB3D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186651D6-D79D-4DFB-AB1A-E2265470B4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186651D6-D79D-4DFB-AB1A-E2265470B4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186651D6-D79D-4DFB-AB1A-E2265470B4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186651D6-D79D-4DFB-AB1A-E2265470B4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE01CD60-D03E-437D-B606-798462FB16F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE01CD60-D03E-437D-B606-798462FB16F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE01CD60-D03E-437D-B606-798462FB16F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE01CD60-D03E-437D-B606-798462FB16F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01AB675-2FE9-4BDF-B051-27B5084E4DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01AB675-2FE9-4BDF-B051-27B5084E4DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01AB675-2FE9-4BDF-B051-27B5084E4DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01AB675-2FE9-4BDF-B051-27B5084E4DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
