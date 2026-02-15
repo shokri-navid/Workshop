@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Mvc;
+using TestWebApplication.Abstraction;
 using TestWebApplication.Abstraction.Application;
 using TestWebApplication.Abstraction.Exceptions;
 using TestWebApplication.Abstraction.RequestDto;
@@ -13,10 +14,12 @@ namespace TestWebApplication.Controllers;
 public class PersonController : ControllerBase
 {
     private readonly IPersonRepository _personRepository;
+    private readonly ISimpleService _simpleService;
 
-    public PersonController(IPersonRepository personRepository)
+    public PersonController(IPersonRepository personRepository, ISimpleService simpleService)
     {
         _personRepository = personRepository;
+        _simpleService = simpleService;
     }
     [HttpGet]
     public async Task<ActionResult<Person>> Test([FromQuery] string? name, [FromQuery]string? family)
@@ -77,5 +80,10 @@ public class PersonController : ControllerBase
         _ => throw new InvalidCastException()
     };
 
+    [HttpGet("di")]
+    public async Task<IActionResult> DiInvoke()
+    {
+        return Ok(_simpleService.GetName());
+    }
 
 }

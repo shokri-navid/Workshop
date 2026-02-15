@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TestWebApplication.Abstraction;
 using TestWebApplication.Abstraction.Middleware;
 using TestWebApplication.DataAccess;
 
@@ -11,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<ICorrelationIdProvider, CorrelationIdProvider>();
 builder.Services.AddScoped<ExceptionsMiddleware>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<ISimpleService, SecondSimpleService>();
+builder.Services.AddScoped<ISimpleService, FirstSimpleService>();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
